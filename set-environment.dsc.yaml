@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.1
+# Requires administrator
+# Checks for absences of environment variable and sets it if it's not present.
+properties:
+  configurationVersion: '0.1.0'
+  assertions:
+    - resource: Environment
+      directives:
+        module: PSDscResources
+      settings:
+        Name: 'DSC_EXAMPLE'
+        Ensure: 'Absent'
+        Value: 'Desired State Configuration'
+        Target: 'Machine'
+  resources:
+    - resource: Environment
+      directives:
+        module: PSDscResources
+      settings:
+        Name: 'DSC_EXAMPLE'
+        Ensure: 'Present'
+        Value: 'Desired State Configuration'
+        Target: 'Machine'
