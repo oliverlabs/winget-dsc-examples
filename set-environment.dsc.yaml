@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.1
-# Requires administrator
+# Requires administrator.
 # Checks for absences of environment variable and sets it if it's not present.
 properties:
   configurationVersion: '0.1.0'
