@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.1
-# Requires administrator
+# running this YAML files requires administrator privileges
 # Checks for presence of environment variable and removes it if it's present.
 properties:
   configurationVersion: '0.1.0'
