@@ -59,7 +59,7 @@ properties:
       settings:
         id: Microsoft.AzureCLI
         source: winget
-     - resource: WinGetPackage
+    - resource: WinGetPackage
       id: Docker.DockerDesktop
       directives:
         description: Install Docker Desktop
@@ -104,7 +104,7 @@ properties:
       settings:
         id: GitHub.GitHubDesktop
         source: winget
-     - resource: WinGetPackage
+    - resource: WinGetPackage
       id: Google.Chrome
       directives:
         description: Install Google Chrome
@@ -186,4 +186,4 @@ properties:
         id: Microsoft.VisualStudioCode
         source: winget
  
-  configurationVersion: "0.2.6"
+  configurationVersion: "0.2.7"
