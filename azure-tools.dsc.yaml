@@ -114,15 +114,6 @@ properties:
         id: Google.Chrome
         source: winget
     - resource: WinGetPackage
-      id: stedolan.jq
-      directives:
-        description: Install jq
-        module: Microsoft.WinGet.DSC
-        allowPrerelease: true
-      settings:
-        id: stedolan.jq
-        source: winget
-    - resource: WinGetPackage
       id: Kubernetes.kubectl
       directives:
         description: Install kubectl
