@@ -5,180 +5,185 @@
 
 properties:
   resources:
-    - resource: Microsoft.WinGet
-      id: 7zip.7zip
+    - resource: WinGetPackage
+      id: mcmilk.7zip-zstd
       directives:
         description: Install 7-Zip
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
-        id: 7zip.7zip
+        id: mcmilk.7zip-zstd
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
+      id: dotPDNLLC.paintdotnet
+      directives:
+        description: Install Paint.NET
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: dotPDNLLC.paintdotnet
+        source: winget
+    - resource: WinGetPackage
       id: Adobe.Acrobat.Reader.64-bit
       directives:
-        description: Install Adobe Acrobat Reader DC
+        description: Install Adobe Acrobat Reader 64-bit
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Adobe.Acrobat.Reader.64-bit
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Microsoft.Azure.AZCopy.10
       directives:
-        description: Install AzCopy
+        description: Install Azure Az Copy Tool
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Microsoft.Azure.AZCopy.10
         source: winget
-    - resource: Microsoft.WinGet
-      id: Microsoft.AzureCLI
-      directives:
-        description: Install Azure CLI
-        allowPrerelease: true
-      settings:
-        id: Microsoft.AzureCLI
-        source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Microsoft.Azure.IoTExplorer
       directives:
         description: Install Azure IoT Installer
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Microsoft.Azure.IoTExplorer
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
+      id: Microsoft.AzureCLI
+      directives:
+        description: Install Azure CLI
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Microsoft.AzureCLI
+        source: winget
+     - resource: WinGetPackage
       id: Docker.DockerDesktop
       directives:
         description: Install Docker Desktop
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Docker.DockerDesktop
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Mozilla.Firefox
       directives:
         description: Install Firefox
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Mozilla.Firefox
         source: winget
-    - resource: Microsoft.WinGet
-      id: Flux.Flux
+    - resource: WinGetPackage
+      id: Git.Git
       directives:
-        description: Install Flux
+        description: Install Git
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
-        id: Flux.Flux
+        id: Git.Git
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: GitHub.cli
       directives:
         description: Install GitHub CLI
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: GitHub.cli
         source: winget
-    - resource: Microsoft.WinGet
-      id: Git.Git
-      directives:
-        description: Install Git
-        allowPrerelease: true
-      settings:
-        id: Git.Git
-        source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: GitHub.GitHubDesktop
       directives:
         description: Install GitHub Desktop
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: GitHub.GitHubDesktop
         source: winget
-    - resource: Microsoft.WinGet
+     - resource: WinGetPackage
       id: Google.Chrome
       directives:
         description: Install Google Chrome
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Google.Chrome
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: stedolan.jq
       directives:
         description: Install jq
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: stedolan.jq
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Kubernetes.kubectl
       directives:
         description: Install kubectl
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Kubernetes.kubectl
         source: winget
-    - resource: Microsoft.WinGet
-      id: Kubernetes.Helm
+    - resource: WinGetPackage
+      id: Helm.Helm
       directives:
         description: Install Helm
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
-        id: Kubernetes.Helm
+        id: Helm.Helm
         source: winget
-    - resource: Microsoft.WinGet
-      id: dotPDNLLC.Paint.NET
-      directives:
-        description: Install Paint.NET
-        allowPrerelease: true
-      settings:
-        id: dotPDNLLC.Paint.NET
-        source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Pulumi.Pulumi
       directives:
         description: Install Pulumi
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Pulumi.Pulumi
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Microsoft.PowerShell
       directives:
         description: Install PowerShell
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Microsoft.PowerShell
         source: winget
-    - resource: Microsoft.WinGet
-      id: ServiceBusExplorer.ServiceBusExplorer
+    - resource: WinGetPackage
+      id: paolosalvatori.ServiceBusExplorer
       directives:
         description: Install Service Bus Explorer
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
-        id: ServiceBusExplorer.ServiceBusExplorer
+        id: paolosalvatori.ServiceBusExplorer
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: HashiCorp.Terraform
       directives:
         description: Install Terraform
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: HashiCorp.Terraform
         source: winget
-    - resource: Microsoft.WinGet
+    - resource: WinGetPackage
       id: Microsoft.VisualStudioCode
       directives:
         description: Install Visual Studio Code
+        module: Microsoft.WinGet.DSC
         allowPrerelease: true
       settings:
         id: Microsoft.VisualStudioCode
         source: winget
-    - resource: Microsoft.WinGet
-      id: Git.Git
-      directives:
-        description: Install Git
-        allowPrerelease: true
-      settings:
-        id: Git.Git
-        source: winget
-  configurationVersion: "0.2.0"
+ 
+  configurationVersion: "0.2.6"
